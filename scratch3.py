@@ -36,7 +36,7 @@ def element_click(xpath, driver):
     element = get_element_by_id(xpath=xpath, driver=driver)
     element.click()
 
-def login(login, password):
+def login(driver, login, password):
     element_send_keys(xpath="user-name", driver=driver, text=login)
     element_send_keys(xpath="password", driver=driver, text=password)
     element_click(xpath='login-button', driver=driver)
