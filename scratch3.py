@@ -55,4 +55,4 @@ def element_send_keys(xpath, driver, text):
 driver = get_driver()
 open_page(driver, URL)
 open_login_page()
-login(login=LOGIN, password=PASSWORD)
+login(driver, login=LOGIN, password=PASSWORD)
